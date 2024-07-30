@@ -2,20 +2,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sorteador de número</title>
+    <title>Calculadora de IMC</title>
   </head>
-  <body style="background-color: #0091fe">
+  <body
+    style="
+      background-color: #0091fe;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    "
+  >
     <div
       style="
         background-color: white;
-        padding: 48px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 6px 12px;
         border-radius: 24px;
+        text-align: center;
+        max-width: 450px;
       "
     >
-      <h1>O número sorteado aparecerá aqui!</h1>
+      <h1>Desafio: Calculadora de IMC (Índice de Massa Corporal)</h1>
+      <div>
+        <label for="altura">Altura em metros(m)</label>
+        <input type="number" name="altura" id="altura">
+      </div>
+      <div>
+        <label for="peso">Peso em quilogramas(kg)</label>
+        <input type="number" name="peso" id="peso">
+      </div>
       <button>Sortear</button>
     </div>
   </body>
